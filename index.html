@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIAD ARABI | SYSTEM ACCESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Boot Sequence -->
+    <div id="boot-sequence" class="boot-sequence">
+        <div class="boot-line">Initializing system...</div>
+        <div class="boot-line">Loading modules...</div>
+        <div class="boot-line">Authenticating...</div>
+        <div class="boot-line">Access granted.</div>
+        <div class="boot-line"><span class="cursor-blink">_</span></div>
+    </div>
+
+    <!-- Main Terminal Interface -->
+    <div id="terminal" class="terminal hidden">
+        <!-- System Header -->
+        <div class="section" id="header-section">
+            <div class="system-header">
+                <div class="system-info">
+                    <span class="accent-green">SYSTEM:</span> personal-terminal v2.0
+                </div>
+                <div class="system-info">
+                    <span class="accent-green">STATUS:</span> <span class="accent-cyan">ONLINE</span>
+                </div>
+            </div>
+            <div class="user-identified">
+                <div class="output-line">
+                    <span class="accent-green">USER IDENTIFIED</span>
+                </div>
+                <div class="output-line">
+                    <span class="accent-green">NAME:</span> JIAD ARABI
+                </div>
+                <div class="output-line">
+                    <span class="accent-green">ROLE:</span> CYBER SECURITY / NETWORK ENGINEER / DEVELOPER
+                </div>
+                <div class="output-line">
+                    <span class="accent-green">LOCATION:</span> MUSCAT, OMAN | ALEXANDRIA, EGYPT
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Commands -->
+        <div class="section" id="nav-section">
+            <div class="command-prompt">
+                <span class="accent-green">></span> 
+                <span class="command-text" id="command-display">help</span>
+                <span class="cursor-blink">_</span>
+            </div>
+            <div class="nav-commands">
+                <div class="nav-item" data-section="about">
+                    <span class="accent-green">></span> about
+                </div>
+                <div class="nav-item" data-section="skills">
+                    <span class="accent-green">></span> skills
+                </div>
+                <div class="nav-item" data-section="projects">
+                    <span class="accent-green">></span> projects
+                </div>
+                <div class="nav-item" data-section="experience">
+                    <span class="accent-green">></span> experience
+                </div>
+                <div class="nav-item" data-section="contact">
+                    <span class="accent-green">></span> contact
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section content-section hidden" id="about-section">
+            <div class="section-header">
+                <span class="accent-green">[SYSTEM PROFILE]</span>
+            </div>
+            <div class="content-output">
+                <div class="output-line">
+                    <span class="accent-cyan">OPERATOR PROFILE LOADED</span>
+                </div>
+                <div class="output-line"></div>
+                <div class="output-line">
+                    I am a passionate researcher and lifelong learner committed to making knowledge accessible.
+                </div>
+                <div class="output-line">
+                    I believe in the limitless potential of people and excel as a precise, flexible planner.
+                </div>
+                <div class="output-line">
+                    Capable of managing large-scale projects, business models, and complex operations.
+                </div>
+                <div class="output-line"></div>
+                <div class="output-line">
+                    As a socially intelligent leader, I align teams, roles, and visions to create effective collaboration.
+                </div>
+                <div class="output-line"></div>
+                <div class="output-line">
+                    At Apex, I designed complete training programs supported by structured assignments and evaluation systems.
+                </div>
+                <div class="output-line">
+                    Fast-growing network and cybersecurity engineer with professional experience across Oman, Saudi Arabia, Lebanon, and Egypt.
+                </div>
+                <div class="output-line">
+                    This experience strengthened my adaptability and cultural intelligence.
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section content-section hidden" id="skills-section">
+            <div class="section-header">
+                <span class="accent-green">[LOADED MODULES]</span>
+            </div>
+            <div class="content-output">
+                <div class="output-line">
+                    <span class="accent-cyan">CAPABILITIES INITIALIZED</span>
+                </div>
+                <div class="output-line"></div>
+                <div class="output-line">
+                    <span class="accent-green">[CORE SKILLS]</span>
+                </div>
+                <div class="output-line">- Communication</div>
+                <div class="output-line">- Project Management</div>
+                <div class="output-line">- Content Development</div>
+                <div class="output-line">- Marketing</div>
+                <div class="output-line">- Networking & IT Infrastructure Planning</div>
+                <div class="output-line">- Leadership Skills</div>
+                <div class="output-line">- Enterprise Security Assessing</div>
+                <div class="output-line">- Time Management</div>
+                <div class="output-line">- Public Relations</div>
+                <div class="output-line">- Business & Market Research</div>
+                <div class="output-line">- Brand Identity Management</div>
+                <div class="output-line"></div>
+                <div class="output-line">
+                    <span class="accent-green">[CERTIFICATIONS]</span>
+                </div>
+                <div class="output-line">- CCNA, CCNP (Cisco Academy)</div>
+                <div class="output-line">- CompTIA: A+, N+, S+</div>
+                <div class="output-line">- ISC2 CC</div>
+                <div class="output-line">- Google Professional: Project Manager, Data Analyst, Marketer, Cybersecurity Specialist, IT Support, E-Commerce Specialist</div>
+                <div class="output-line">- IBM Professional: Data Engineer, Data Analyst</div>
+                <div class="output-line"></div>
+                <div class="output-line">
+                    <span class="accent-green">[EDUCATION]</span>
+                </div>
+                <div class="output-line">- UoPeople University: BSc Cyber Security (2023-2026) | GPA 3.46/4</div>
+                <div class="output-line">- Aspire Institute Leaders Program Graduate 2024</div>
+                <div class="output-line">- Empower Hub Graduate 2024</div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section content-section hidden" id="projects-section">
+            <div class="section-header">
+                <span class="accent-green">[EXECUTABLES]</span>
+            </div>
+            <div class="content-output">
+                <div class="output-line">
+                    <span class="accent-cyan">PROJECT MODULES LOADED</span>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[PROJECT 1]</span> Rebuilding Syria's Energy Infrastructure
+                    </div>
+                    <div class="output-line">Solving Syria's energy crisis through renewable and heat-based systems.</div>
+                    <div class="output-line">Reduces emissions, enhances energy independence, creates jobs.</div>
+                    <div class="output-line">SDG 7, SDG 13, SDG B</div>
+                    <div class="output-line">
+                        <span class="accent-green">></span> <span class="command-link">execute</span>
+                    </div>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[PROJECT 2]</span> New Syria Initiative (Aspire Institute)
+                    </div>
+                    <div class="output-line">Global initiative uniting Syrian youth for innovative reconstruction projects.</div>
+                    <div class="output-line">Strengthens skills, expands economic opportunities, builds partnerships.</div>
+                    <div class="output-line">SDG 4, SDG 8, SDG 17</div>
+                    <div class="output-line">
+                        <span class="accent-green">></span> <span class="command-link">execute</span>
+                    </div>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[PROJECT 3]</span> Apex Enterprise Solutions LMS
+                    </div>
+                    <div class="output-line">First e-commerce-focused LMS in the Arab world.</div>
+                    <div class="output-line">Empowers learners with practical digital skills.</div>
+                    <div class="output-line">
+                        <span class="accent-green">></span> <span class="command-link">execute</span>
+                    </div>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[PROJECT 4]</span> Digital Brand Development
+                    </div>
+                    <div class="output-line">Operational business models and online stores.</div>
+                    <div class="output-line">Brands: Ather (Hoodies), Autos, Aylla, Aynur, New Syria</div>
+                    <div class="output-line">
+                        <span class="accent-green">></span> <span class="command-link">execute</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section content-section hidden" id="experience-section">
+            <div class="section-header">
+                <span class="accent-green">[OPERATION LOGS]</span>
+            </div>
+            <div class="content-output">
+                <div class="output-line">
+                    <span class="accent-cyan">EXPERIENCE RECORDS ACCESSED</span>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[POSITION]</span> Security & Network Engineer
+                    </div>
+                    <div class="output-line">FREELANCING, NBRAS KSA, MOSTAFA ARABILLC</div>
+                    <div class="output-line">Design, implementation, and maintenance of secure network infrastructures.</div>
+                    <div class="output-line">High availability, performance, and cybersecurity focus.</div>
+                    <div class="output-line">Experience across Oman, Saudi Arabia, Lebanon, Egypt.</div>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[POSITION]</span> Director and Founder - Apex Enterprise Solutions
+                    </div>
+                    <div class="output-line">End-to-end digital and e-commerce solutions across the Arab world.</div>
+                    <div class="output-line">Training new generation of experts in marketing, design, e-commerce.</div>
+                    <div class="output-line">Strategic and administrative leadership.</div>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[POSITION]</span> Project Developer & Planner
+                    </div>
+                    <div class="output-line">Google-certified Project Manager.</div>
+                    <div class="output-line">National-scale reconstruction proposals, digital projects, e-commerce systems.</div>
+                    <div class="output-line">Operational business models and brand development.</div>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[POSITION]</span> Store Manager
+                    </div>
+                    <div class="output-line">TECHBITE, HOOR STORE, AYLA, RIVAL CARS, AYNUR, WASL, MORE</div>
+                    <div class="output-line">End-to-end retail operations, inventory control, sales optimization.</div>
+                    <div class="output-line">Team leadership and customer experience management.</div>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[POSITION]</span> Marketer
+                    </div>
+                    <div class="output-line">Data-driven marketing campaigns, brand visibility, sales growth.</div>
+                    <div class="output-line">Stores & Pages operations for e-commerce brands.</div>
+                </div>
+                <div class="output-line"></div>
+                <div class="project-item">
+                    <div class="output-line">
+                        <span class="accent-green">[POSITION]</span> Cybersecurity & Networking Coach & Content Creator
+                    </div>
+                    <div class="output-line">Training content across YouTube, LinkedIn, Facebook.</div>
+                    <div class="output-line">Educational videos, tutorials, and guides.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section content-section hidden" id="contact-section">
+            <div class="section-header">
+                <span class="accent-green">[CONNECTION PROTOCOL]</span>
+            </div>
+            <div class="content-output">
+                <div class="output-line">
+                    <span class="accent-cyan">ESTABLISHING CONNECTION...</span>
+                </div>
+                <div class="output-line"></div>
+                <div class="output-line">
+                    <span class="accent-green">EMAIL:</span> jewab10@gmail.com
+                </div>
+                <div class="output-line">
+                    <span class="accent-green">PHONE:</span> +96898945680 | +201031286190
+                </div>
+                <div class="output-line">
+                    <span class="accent-green">LOCATION:</span> Bosher, Muscat, Oman | Alexandria, Egypt
+                </div>
+                <div class="output-line">
+                    <span class="accent-green">LINKEDIN:</span> <a href="https://linkedin.com/in/jiad-arabi" target="_blank" class="link">Jiad Arabi</a>
+                </div>
+                <div class="output-line"></div>
+                <div class="output-line">
+                    <span class="accent-green">></span> <span class="command-link" id="connect-link">connect</span>
+                </div>
+                <div class="output-line">
+                    <span class="accent-green">></span> <span class="command-link" id="exit-link">exit</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Cursor -->
+        <div class="terminal-cursor">
+            <span class="cursor-blink">_</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
