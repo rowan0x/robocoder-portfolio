@@ -93,9 +93,13 @@ body {
 
 .terminal {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.75rem 1.5rem 2rem; /* قللنا الـ padding-top */
-    min-height: calc(100vh - 3rem); /* نخصم ارتفاع الهيدر */
+    margin: 0 auto; /* يضمن توسيط العنصر بدون هوامش علوية */
+    padding: 0 1.5rem 2rem; /* تم تعديل القيمة الأولى لـ 0 لإزالة الفراغ العلوي */
+    min-height: calc(100vh - 3rem); 
+}
+
+.terminal.hidden {
+    display: none;
 }
 
 
@@ -144,6 +148,7 @@ body {
     gap: 1rem;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
+    padding-top: 1rem; /* إضافة صغيرة للحفاظ على توازن الشريط */
     border-bottom: 1px solid rgba(0, 255, 65, 0.2);
 }
 
@@ -315,7 +320,7 @@ body {
 
 @media (max-width: 768px) {
     .terminal {
-        padding: 1.5rem 1rem;
+        padding: 0.5rem 1rem; /* تم تقليل الهامش في الموبايل أيضاً */
     }
 
     .system-header {
