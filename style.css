@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
 :root {
@@ -93,9 +94,9 @@ body {
 
 .terminal {
     max-width: 1200px;
-    margin: 0 auto; /* يضمن توسيط العنصر بدون هوامش علوية */
-    padding: 0 1.5rem 2rem; /* تم تعديل القيمة الأولى لـ 0 لإزالة الفراغ العلوي */
-    min-height: calc(100vh - 3rem); 
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem 2rem; /* قللنا الـ padding-top */
+    min-height: calc(100vh - 3rem); /* نخصم ارتفاع الهيدر */
 }
 
 .terminal.hidden {
@@ -162,7 +163,7 @@ body {
 }
 
 .output-line {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     color: var(--text-white);
     font-size: 16px;
 }
@@ -244,6 +245,7 @@ body {
 .output-line {
     margin-bottom: 0.6rem;
     color: var(--text-white);
+    font-size: 16px;
 }
 
 /* ============================================
@@ -320,7 +322,7 @@ body {
 
 @media (max-width: 768px) {
     .terminal {
-        padding: 0.5rem 1rem; /* تم تقليل الهامش في الموبايل أيضاً */
+        padding: 1.5rem 1rem;
     }
 
     .system-header {
@@ -350,7 +352,7 @@ body {
 
 @media (max-width: 480px) {
     .terminal {
-        padding: 0.5rem 0.8rem;
+        padding: 1rem 0.8rem;
     }
 
     body {
@@ -374,4 +376,3 @@ body {
 * {
     transition: color 0.2s ease, text-shadow 0.2s ease;
 }
-
