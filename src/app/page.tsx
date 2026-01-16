@@ -78,7 +78,7 @@ export default function HomePage() {
 
       {/* Page Content */}
       {/* التعديل هنا: غيرنا justify-center إلى justify-start وأضفنا pt-20 لضبط المسافة العلوية */}
-      <div className="relative z-10 min-h-screen flex flex-col justify-start items-center p-4 pt-20">
+      <div className="relative z-10 min-h-screen w-full flex flex-col justify-start items-center p-4 pt-24">
         
         {/* Boot Sequence */}
         <div className="w-full max-w-4xl mb-8">
