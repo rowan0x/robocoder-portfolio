@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
-import Navigation from '@/components/Navigation'
 import MatrixRain from '@/components/MatrixRain'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,12 +29,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={`${inter.className} ${jetbrainsMono.variable} bg-black text-green-400 min-h-screen overflow-x-hidden`}>
+      <body
+        className={`${inter.className} ${jetbrainsMono.variable} bg-black text-green-400 min-h-screen overflow-x-hidden`}
+      >
         {/* Matrix Rain Background */}
         <div id="matrix-bg" className="fixed inset-0 z-0 opacity-10">
           <MatrixRain />
         </div>
-        
+
         {/* Terminal Border */}
         <div className="fixed inset-0 z-10 pointer-events-none">
           <div className="w-full h-full border-2 border-green-400/20 rounded-lg shadow-[0_0_20px_rgba(0,255,65,0.3)]">
@@ -72,3 +73,4 @@ export default function RootLayout({
     </html>
   )
 }
+
