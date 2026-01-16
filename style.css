@@ -350,7 +350,7 @@ body {
 
 @media (max-width: 480px) {
     .terminal {
-        padding: 1rem 0.8rem;
+        padding: 0.5rem 0.8rem;
     }
 
     body {
