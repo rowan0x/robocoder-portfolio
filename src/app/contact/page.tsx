@@ -203,7 +203,7 @@ export default function ContactPage() {
 
             <div className="bg-yellow-400/10 border border-yellow-400/30 rounded p-4 mb-6">
               <div className="text-yellow-400 font-mono text-sm">
-                ⚠ DEMO ONLY: This form doesn't send real messages
+                ⚠ DEMO ONLY: This form doesn&apos;t send real messages
               </div>
               <div className="text-yellow-400/70 font-mono text-xs mt-1">
                 Use real contact info below for actual communication
@@ -216,7 +216,7 @@ export default function ContactPage() {
                   ⚠ WARNING: Connection not established
                 </div>
                 <div className="text-red-400/70 font-mono text-xs mt-1">
-                  Run "connect" command in terminal first
+                  Run &quot;connect&quot; command in terminal first
                 </div>
               </div>
             )}

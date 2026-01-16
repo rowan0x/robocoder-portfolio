@@ -137,10 +137,8 @@
 @layer theme {
   :root, :host {
     --font-mono: var(--font-geist-mono);
-    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-green-300: oklch(87.1% 0.15 154.449);
@@ -148,7 +146,6 @@
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-cyan-300: oklch(86.5% 0.127 207.078);
     --color-cyan-400: oklch(78.9% 0.154 211.53);
-    --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-purple-300: oklch(82.7% 0.119 306.383);
     --color-purple-400: oklch(71.4% 0.203 305.504);
@@ -505,9 +502,6 @@
   .mx-3\.5 {
     margin-inline: calc(var(--spacing) * 3.5);
   }
-  .mx-4 {
-    margin-inline: calc(var(--spacing) * 4);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -774,15 +768,6 @@
   }
   .w-72 {
     width: calc(var(--spacing) * 72);
-  }
-  .w-\[85\%\] {
-    width: 85%;
-  }
-  .w-\[90\%\] {
-    width: 90%;
-  }
-  .w-\[95\%\] {
-    width: 95%;
   }
   .w-\[100px\] {
     width: 100px;
@@ -1819,10 +1804,6 @@
     --tw-shadow: 0 0 20px var(--tw-shadow-color, rgba(0,255,65,0.3));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .shadow-\[0_0_20px_rgba\(0\,255\,255\,0\.1\)\] {
-    --tw-shadow: 0 0 20px var(--tw-shadow-color, rgba(0,255,255,0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .shadow-\[0_0_30px_rgba\(0\,255\,65\,0\.2\)\] {
     --tw-shadow: 0 0 30px var(--tw-shadow-color, rgba(0,255,65,0.2));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -2579,13 +2560,6 @@
       }
     }
   }
-  .hover\:text-blue-300 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-blue-300);
-      }
-    }
-  }
   .hover\:text-cyan-300 {
     &:hover {
       @media (hover: hover) {
@@ -2649,24 +2623,10 @@
       }
     }
   }
-  .hover\:text-red-300 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-red-300);
-      }
-    }
-  }
   .hover\:text-sidebar-accent-foreground {
     &:hover {
       @media (hover: hover) {
         color: var(--sidebar-accent-foreground);
-      }
-    }
-  }
-  .hover\:text-yellow-300 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-yellow-300);
       }
     }
   }

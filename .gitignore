@@ -1,2 +1,7 @@
+git add .
 .vercel
 node_modules
+node_modules
+.next
+.env
+.env.local
